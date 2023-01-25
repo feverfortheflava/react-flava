@@ -6,8 +6,8 @@ const MyPosts = () => {
     <div>
       <div>My posts</div>
       <div className={cl.posts}>
-        <Post />
-        <Post />
+        <Post message="hi guys" likes="16" />
+        <Post message="hi freinds" likes="25" />
         <Post />
         <Post />
         <Post />
