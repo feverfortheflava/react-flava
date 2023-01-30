@@ -1,4 +1,5 @@
 import React from "react"; //паше і без цього
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 //import logo from "./logo.svg";
 import "./App.css";
 import Dialogs from "./components/Dialogs/Dialogs";
@@ -8,14 +9,18 @@ import Profile from "./components/Profile/Profile";
 
 const App = () => {
   return (
-    <div className="app-wrapper">
-      <Header />
-      <Navbar />
-      <div className="app-wrapper-content">
-        <Dialogs />
+    <BrowserRouter>
+      <div className="app-wrapper">
+        <Header />
+        <Navbar />
+        <div className="app-wrapper-content">
+          <Routes>
+            <Route path="/dialogs" element={<Dialogs />} />
+            <Route path="/profile" element={<Profile />} />
+          </Routes>
+        </div>
       </div>
-      {/*<Profile />*/}
-    </div>
+    </BrowserRouter>
   );
 };
 

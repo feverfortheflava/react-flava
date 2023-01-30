@@ -5,3 +5,9 @@
 .item {
   color: rgb(240, 206, 181);
 }
+.active {
+  color: aquamarine;
+}
+a:visited {
+  color: rgb(240, 206, 181);
+}
