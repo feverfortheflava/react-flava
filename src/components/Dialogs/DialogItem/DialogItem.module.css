@@ -1,0 +1,9 @@
+.dialog a {
+  text-decoration: none;
+}
+.dialog a {
+  color: black;
+}
+.dialog a:visited {
+  color: black;
+}

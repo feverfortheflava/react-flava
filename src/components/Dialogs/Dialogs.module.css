@@ -5,10 +5,9 @@
 .dialogs_items {
   padding: 10px;
 }
-.dialog {
+.dialog a:visited {
+  color: black;
 }
 .messages {
   padding: 10px;
-}
-.message {
 }
