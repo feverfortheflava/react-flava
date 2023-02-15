@@ -3,6 +3,13 @@ import MyPosts from "./MyPosts/MyPosts";
 import cl from "./Profile.module.css";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 const Profile = () => {
+  let posts = [
+    { id: 1, message: "hi guys", likes: 19 },
+    { id: 2, message: "hi friends", likes: 22 },
+    { id: 3, message: "<3", likes: 32 },
+    { id: 4, message: "hahahahahah", likes: 5 },
+    { id: 5, message: "lol", likes: 5 },
+  ];
   return (
     <div>
       <div>
@@ -12,7 +19,7 @@ const Profile = () => {
         />
       </div>
       <ProfileInfo />
-      <MyPosts />
+      <MyPosts posts={posts} />
     </div>
   );
 };
